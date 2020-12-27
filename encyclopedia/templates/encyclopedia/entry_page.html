@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    {{ html_display|safe }}
+
+    <p><a href="http://127.0.0.1:8000/wiki/{{ title }}/edit">Edit Page</a></p>
+{% endblock %}
+
